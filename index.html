@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece</title>
+    <!--RELOJ-->
+    <script>
+        //Ejemplo que visualiza en reloj digital//
+
+        function Ver_Hora()
+        {
+            var mihora = new Date ();
+            var horas = mihora.getHours().toString();
+            var minutos = mihora.getMinutes().toString();
+            if(minutos.length == 1) minutos = "0" + minutos;
+            var segundos = mihora.getSeconds().toString();
+            if (segundos.length == 1) segundos = "0" + segundos;
+            document.forms[0].mireloj.value = horas + " : " + minutos + " : " + segundos;
+
+        }
+    </script>
+</head>
+<body>
+    <!--HEADER-->
+    <nav id="hdr" class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="header_img" src="img/header logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#tripu">Tripulacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#barc">Barcos</a>
+              </li>
+            </ul>
+            <div class="time">
+            <form class="reloj_container">
+                <p algin="center">
+                    <input class="reloj" type="text" size="10" name="mireloj" style="margin: 5px; margin-top: 15px; text-align: center; background-color: #FFC47B; border: none;">
+                </p>
+            </form>
+        
+            <script>
+                var r = setInterval ("Ver_Hora()", 500);
+            </script>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!--HEADER-->
+    <!--SLIDER-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/SLIDER_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/SLIDER_3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/SLIDER_4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--SLIDER-->
+
+    <!--MIEMBROS-->
+    <br>
+    <h2 id="tripu" class="ant_ttl">TRIPULACIÓN</h2>
+    <div class="tripu">
+      <!--CARDS-->
+      <div class="card" style="width: 18rem;">
+        <img src="img/LUFFY_W.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MONKEY. D . LUFFY</h5>
+          <p class="card-text">Capitán</p>
+          <a href="https://onepiece.fandom.com/es/wiki/Monkey_D._Luffy" target="_blank" class="btn btn-primary">Conocer</a>
+        </div>
+      </div>
+        <!--CARDS-->
+      <div class="card" style="width: 18rem;">
+        <img src="img/ZORO_W.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">RORONOA ZORO</h5>
+          <p class="card-text">Espadachin</p>
+          <a href="https://onepiece.fandom.com/es/wiki/Roronoa_Zoro" target="_blank" class="btn btn-primary">Conocer</a>
+        </div>
+      </div>
+        <!--CARDS-->
+      <div class="card" style="width: 18rem;">
+        <img src="img/USOPP_W.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">USOPP</h5>
+          <p class="card-text">Francotirador</p>
+          <a href="https://onepiece.fandom.com/es/wiki/Usopp" target="_blank"  class="btn btn-primary">Conocer</a>
+        </div>
+      </div>
+         <!--CARDS-->
+         <div class="card" style="width: 18rem;">
+            <img src="img/NAMI_W.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NAMI</h5>
+              <p class="card-text">Navegante</p>
+              <a href="https://onepiece.fandom.com/es/wiki/Nami" target="_blank"  class="btn btn-primary">Conocer</a>
+            </div>
+          </div>
+             <!--CARDS-->
+      <div class="card" style="width: 18rem;">
+        <img src="img/CHOPPER_W.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHOPPER</h5>
+          <p class="card-text">Medico</p>
+          <a href="https://onepiece.fandom.com/es/wiki/Tony_Tony_Chopper" target="_blank"  class="btn btn-primary">Conocer</a>
+        </div>
+      </div>
+         <!--CARDS-->
+         <div class="card" style="width: 18rem;">
+            <img src="img/FRANKI_W.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">FRANKY</h5>
+              <p class="card-text">Constructor</p>
+              <a href="https://onepiece.fandom.com/es/wiki/Franky" target="_blank"  class="btn btn-primary">Conocer</a>
+            </div>
+          </div>
+             <!--CARDS-->
+      <div class="card" style="width: 18rem;">
+        <img src="img/BROOK_W.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BROOK</h5>
+          <p class="card-text">Musico</p>
+          <a href="https://onepiece.fandom.com/es/wiki/Brook" target="_blank"  class="btn btn-primary">Conocer</a>
+        </div>
+      </div>
+         <!--CARDS-->
+         <div class="card" style="width: 18rem;">
+            <img src="img/SANJI_W.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SANJI</h5>
+              <p class="card-text">Cocinero</p>
+              <a href="https://onepiece.fandom.com/es/wiki/Sanji" target="_blank"  class="btn btn-primary">Conocer</a>
+            </div>
+          </div>
+             <!--CARDS-->
+      <div class="card" style="width: 18rem;">
+        <img src="img/ROBIN_W.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NICO ROBIN</h5>
+          <p class="card-text">Arqueologa</p>
+          <a href="https://onepiece.fandom.com/es/wiki/Nico_Robin" target="_blank"  class="btn btn-primary">Conocer</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+<!--BARCOS-->
+    <!--CARDS-->
+    <h2 id="barc" class="ant_ttl">BARCOS</h2>
+    <br>
+    <div class="barc_all">
+    <div class="barc">
+                <!--CARDS-->
+      <div class="card" style="width: 18rem;">
+        <img src="img/GOING_TAG.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GOING MERRY</h5>
+          <p class="card-text">Barco de los Sobrero de Paja hasta el arco de "Water 7"</p>
+          <a href="https://onepiece.fandom.com/es/wiki/Going_Merry" target="_blank"  class="btn btn-primary">Conocer</a>
+        </div>
+      </div>
+              <!--CARDS-->
+              <div class="card" style="width: 18rem;">
+                <img src="img/THOUSAND_SUNNY_W.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">THOUSAND SUNNY</h5>
+                  <p class="card-text">Actual barco de los Sombrero de Paja</p>
+                  <a href="https://onepiece.fandom.com/es/wiki/Thousand_Sunny" target="_blank"  class="btn btn-primary">Conocer</a>
+                </div>
+              </div>
+    </div>
+    </div>
+
+    <h2 id="villanos" class="ant_ttl">ANTAGONISTAS</h2>
+    <div class="enel_container">
+
+
+                                <!-- Button trigger modal -->
+                        <button type="button" class="btn_ant" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Arlong
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Arlong (Gyoyin)</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Este pirata gyojin se presenta como una gran amenaza para Luffy. Es despiadado, muy cruel y sin escrúpulos. Siente odio por los humanos a los que considera una raza inferior
+
+                                    <img src="./img/arlong.jpg" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a href="https://onepiece.fandom.com/es/wiki/Arlong"><button type="button" class="btn btn-primary">Conocer</button></a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+    </div>
+
+<footer>
+<div class="ftr_all">
+    <div class="contact">
+        <h6 class="contact_ttl">Contacto</h6>
+        <a class="foro_ftr" href="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki" target="_blank" >FORO</a>
+        <a class="anime_ftr" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiW69jE3fn7AhUEgloFHXmSCKEYABABGgJ2dQ&ae=2&ohost=www.google.com&cid=CAESZ-D2X4gJuXcat2_2YniSBb5Ij6fzl_YVWiqBZYFp64sZKFXWEQPqJvPyyVJX9ZB6q6G4aE8vj3esFrSuaBX_yg2s1wt6WU-qZnwVlPYL-P11_pxjlbp5uoBYT1mU3GSlUwAJWyQerpI&sig=AOD64_34TAW-gesAk5gJSjWDf19W-RRm4g&adurl&ved=2ahUKEwiZpdLE3fn7AhUTUjABHQSQCAkQqyQoAHoECAcQBQ" target="_blank" >ANIME</a>
+    </div>
+    <div class="redes">
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiW69jE3fn7AhUEgloFHXmSCKEYABABGgJ2dQ&ae=2&ohost=www.google.com&cid=CAESZ-D2X4gJuXcat2_2YniSBb5Ij6fzl_YVWiqBZYFp64sZKFXWEQPqJvPyyVJX9ZB6q6G4aE8vj3esFrSuaBX_yg2s1wt6WU-qZnwVlPYL-P11_pxjlbp5uoBYT1mU3GSlUwAJWyQerpI&sig=AOD64_34TAW-gesAk5gJSjWDf19W-RRm4g&adurl&ved=2ahUKEwiZpdLE3fn7AhUTUjABHQSQCAkQqyQoAHoECAcQBQ" target="_blank" ><img src="img/crunchy.png" alt="" width="30px" style="margin: 8px;" ></a>
+        <a href="https://www.ovtt.org/recursos/derechos-de-autor-o-copyright/" target="_blank" ><img src="img/Copy.png" alt="" width="30px" style="margin: 8px;" ></a>
+    </div>
+    <div class="back">
+        <a href="#hdr"><img src="img/header logo.png" alt="" width="200px"></a>
+    </div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

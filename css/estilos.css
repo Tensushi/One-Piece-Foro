@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Titles;
+    src: url(../fonts/MusticaPro-SemiBold.otf);
+}
+
+
+.container-fluid{
+    display: flex;
+    background-color: #0B4B59;
+}
+
+.header_img{
+    width: 100px;
+}
+
+.reloj{
+    background-color: aqua;
+}
+
+
+
+.tripu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.barc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 20%;
+}
+
+.barc_all{
+    background-image: url(../img/BARC_F.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 30px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ftr_all{
+    justify-content: center;
+    padding: 100px;
+    background-color: #0B4B59;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_ttl{
+    color: white;
+}
+
+.foro_ftr{
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+
+.foro_ftr:hover{
+    color: #C15143;
+}
+
+.anime_ftr:hover{
+   color: #C15143;
+}
+
+.anime_ftr{
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+.redes{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enel_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/enemy_f.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 10%;
+}
+
+.btn_ant{
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-bottom: 40%;
+}
+
+.btn_ant:hover{
+    background-color: #0B4B59;
+}
+
+.ant_ttl{
+    background-color: #c0b457;
+    width: 40%;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 30%;
+
+}
+@media (max-width: 380px) {
+
+    .barc{
+        margin-left: 0%;
+    }
+
+    .barc_all{
+        background-image: none;
+        background: linear-gradient(orange, pink);
+    }
+
+.ant_ttl{
+    font-size: small;
+}
+    
+}
